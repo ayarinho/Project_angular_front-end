@@ -1,0 +1,36 @@
+
+<div class="logo">
+    <a href="https://www.3s.com.tn" class="simple-text logo-mini">
+      <div class="logo-img">
+          <img src="./assets/img/3S.jpg"/>
+      </div>
+    </a>
+    <a href="https://www.3s.com.tn" class="simple-text logo-normal">
+      
+        <thead class=" text-secondary">
+            3S
+       </thead> 
+
+    </a>
+</div>
+<div class="sidebar-wrapper">
+    <ul class="nav">
+        <li  *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+            <a [routerLink]="[menuItem.path]"  >
+                <i class="now-ui-icons {{menuItem.icons}}"></i>
+                
+                <p>{{menuItem.title}}</p>
+                
+      
+                
+            </a>
+           
+        </li>
+
+       
+
+     
+          
+    </ul>
+    
+</div>
